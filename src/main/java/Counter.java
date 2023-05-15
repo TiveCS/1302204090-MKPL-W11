@@ -17,6 +17,8 @@ public class Counter {
 	public void decrement() {
 		count--;
 	}
+
+	public void multiply(int num) { count *= num; }
 	
 	public int getCount() {
 		return count;

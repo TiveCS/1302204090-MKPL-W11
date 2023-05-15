@@ -36,4 +36,17 @@ public class CounterTest {
 		}
 	}
 
+	@Test
+	public void testMultiply() {
+		Counter testCounter = new Counter();
+
+		testCounter.increment();
+
+		testCounter.multiply(4);
+		assertEquals(testCounter.getCount(), 4);
+
+		testCounter.multiply(2);
+		assertEquals(testCounter.getCount(), 8);
+	}
+
 }
