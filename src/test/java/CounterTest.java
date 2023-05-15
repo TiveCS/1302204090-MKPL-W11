@@ -49,4 +49,15 @@ public class CounterTest {
 		assertEquals(testCounter.getCount(), 8);
 	}
 
+	@Test
+	public void testDivide() {
+		Counter testCounter = new Counter();
+
+		testCounter.increment();
+		testCounter.increment();
+
+		testCounter.divide(2);
+		assertEquals( 1, testCounter.getCount());
+	}
+
 }
